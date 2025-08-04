@@ -1,0 +1,219 @@
+@font-face {
+  font-family: 'Roboto Condensed';
+  src: url('/assets/fonts/RobotoCondensed-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.layout {
+    width: 1920px;
+}
+
+.hero {
+    background: linear-gradient(
+    to bottom right,
+    #094C3F 0%,  
+    #00070B 50%,
+    #094C3F 100%
+  );
+  color: white;
+}
+
+.hero-content {
+    height: 850px;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    gap: 17px;
+    align-items: center;
+}
+
+.logo-pic {
+    width: 52px;
+    height: 52px;
+}
+
+.logo-text {
+    font-size: 34px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+    list-style: none;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 25px 120px;
+    height: 100px;
+    align-items: center;
+    color: white;
+}
+
+.nav-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+}
+
+.nav-buttons button {
+    width: 165px;
+    height: 50px;
+    font-size: 26px;
+    font-weight: 500;
+}
+
+.login {
+    border: 2px solid white;
+    border-radius: 50px;
+    background-color: black;
+    color: white;
+}
+
+.signup {
+    border: 2px solid black;
+    background-image: linear-gradient(to right, #BBFF00, #709900);
+    border-radius: 50px;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.hero-title {
+    font-size: 95px;
+    text-transform: uppercase;
+    height: 222px;
+    width: 888px;
+    font-weight: 600;
+}
+
+.hero-subtitle {
+    font-size: 24px;
+    width: 645px;
+    height: 84px;
+}
+
+.hero-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 33px;
+}
+
+.hero-buttons button {
+    width: 303px;
+    height: 74px;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.open-account {
+    border: 2px solid black;
+    background-image: linear-gradient(to right, #BBFF00, #709900);
+    border-radius: 50px;
+}
+
+.watch-tutorial {
+    border: 2px solid black;
+    color: #002E25;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    justify-content: start;
+    padding: 0 8px;
+}
+
+.watch-img {
+    width: 60px;
+    height: 60px;
+    background-color: #002E25;
+    border-radius: 60px;
+}
+
+.watch-img img {
+    padding-top: 18px;
+    padding-left: 2px;
+}
+
+.leaders-title {
+    text-transform: uppercase;
+    font-size: 26px;
+}
+
+.leaders-list {
+    display: flex;
+    flex-direction: row;
+    font-size: 32px;
+    gap: 96px;
+    list-style: none;
+    align-items: center;
+}
+
+.leaders-text {
+    display: flex;
+    flex-direction: column;
+    gap: 46px;
+}
+
+.hero-content {
+    padding: 65px 120px 95px 120px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.hero-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 690px;
+}
+
+.hero-right {
+    width: 725px;
+    height: 690px;
+}
+
+.card-up {
+    display: flex;
+    flex-direction: row;
+    height: 244px;
+    margin-bottom: 10px;
+}
+
+.card-up img {
+    width: 357px;
+    height: 244px;
+}
+
+#person1 {
+    position: absolute;
+    top: 159px;
+    right: 30px;
+}
+
+#graph1 {
+    position: absolute;
+    top: 600px;
+    right: 30px;
+}

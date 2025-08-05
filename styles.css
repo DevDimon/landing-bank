@@ -345,3 +345,67 @@ body {
     height: 84px;
     font-size: 24px;
 }
+
+.solutions {
+    height: 791px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 120px;
+}
+
+.solutions-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.solutions-title-text {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.solutions-title {
+    font-size: 80px;
+    text-transform: uppercase;
+    font-weight: 600;
+    width: 760px;
+}
+
+.solutions-text {
+    font-size: 24px;
+    width: 724px;
+}
+
+.solutions-info-title {
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.solutions-info-text {
+    font-size: 24px;
+}
+
+.solutions-subinfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.solutions-info {
+    width: 716px;
+    display: flex;
+    flex-direction: row;
+    gap: 42px;
+}
+
+.solutions-right {
+    position: relative;
+}
+
+.solutions-right-pic {
+    position: absolute;
+    top: -70px;
+    right: 0;
+}

@@ -1,3 +1,11 @@
+:root {
+    --light1: #BBFF00;
+    --light2: #709900;
+    --dark1: #002E25;
+    --dark2: #094C3F;
+    --dark3: #00070B;
+}
+
 @font-face {
   font-family: 'Roboto Condensed';
   src: url('/assets/fonts/RobotoCondensed-Regular.ttf') format('truetype');
@@ -22,9 +30,9 @@ body {
 .hero {
     background: linear-gradient(
     to bottom right,
-    #094C3F 0%,  
-    #00070B 50%,
-    #094C3F 100%
+    var(--dark2) 0%,  
+    var(--dark3) 50%,
+    var(--dark2) 100%
   );
   color: white;
 }
@@ -88,8 +96,11 @@ body {
 
 .signup {
     border: 2px solid black;
-    background-image: linear-gradient(to right, #BBFF00, #709900);
     border-radius: 50px;
+}
+
+.gradient {
+    background-image: linear-gradient(to right, var(--light1), var(--light2));
 }
 
 .hero-text {
@@ -127,7 +138,6 @@ body {
 
 .open-account {
     border: 2px solid black;
-    background-image: linear-gradient(to right, #BBFF00, #709900);
     border-radius: 50px;
 }
 
@@ -146,7 +156,7 @@ body {
 .watch-img {
     width: 60px;
     height: 60px;
-    background-color: #002E25;
+    background-color: var(--dark1);
     border-radius: 60px;
 }
 
@@ -194,11 +204,16 @@ body {
     height: 690px;
 }
 
+.hero-card {
+    position: relative;
+}
+
 .card-up {
     display: flex;
     flex-direction: row;
     height: 244px;
     margin-bottom: 10px;
+    gap: 10px;
 }
 
 .card-up img {
@@ -208,12 +223,125 @@ body {
 
 #person1 {
     position: absolute;
-    top: 159px;
-    right: 30px;
+    top: 2px;
+    right: 52px;
 }
 
 #graph1 {
     position: absolute;
-    top: 600px;
-    right: 30px;
+    top: 447px;
+    right: 51px;
+}
+
+.insight {
+    height: 876px;
+    color: black;
+    padding: 65px 120px;
+    display: flex;
+    flex-direction: column;
+    gap: 29px;
+}
+
+.insight-title {
+    font-size: 80px;
+    text-transform: uppercase;
+    width: 1200px;
+    height: 188px;
+}
+
+.insight-cards {
+    display: flex;
+    flex-direction: row;
+    gap: 90px;
+}
+
+.insight-card {
+    width: 499px;
+    height: 529px;
+    border: 3px solid lightgray;
+    border-radius: 15px;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.insight-card-text {
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.insight-bottom-text1 {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.insight-bottom-text1 span {
+    font-size: 32px;
+}
+
+.reverse-card {
+    background-color: var(--dark3);
+    color: white;
+}
+
+.gradient-text {
+    background: linear-gradient(to right, var(--light1), var(--light2));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.insight-bottom-text2 {
+    font-size: 24px;
+    text-align: center;
+}
+
+.product {
+    height: 316px;
+}
+
+.product-cards {
+    display: flex;
+    flex-direction: row;
+    padding: 33px 97px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-card {
+    width: 545px;
+    height: 251px;
+    display: flex;
+    flex-direction: column;
+    padding: 21px 56px;
+    text-align: center;
+    border: 3px solid lightgray;
+    border-radius: 15px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-card-pic {
+    width: 132px;
+    height: 65px;
+    background-color: var(--dark3);
+    border-radius: 25px;
+}
+
+.product-card-pic img {
+    margin-top: 7px;
+}
+
+.product-card-title {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.product-card-text {
+    width: 433px;
+    height: 84px;
+    font-size: 24px;
 }

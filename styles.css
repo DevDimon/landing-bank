@@ -14,6 +14,7 @@
 }
 
 * {
+    border: 1px solid red;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -21,6 +22,11 @@
 
 body {
     font-family: 'Roboto Condensed', sans-serif;
+}
+
+.main {
+    max-width: 1920px;
+    margin: 0 auto;
 }
 
 .layout {
@@ -99,8 +105,12 @@ body {
     border-radius: 50px;
 }
 
-.gradient {
+.gradient-to-right {
     background-image: linear-gradient(to right, var(--light1), var(--light2));
+}
+
+.gradient-to-bottom {
+    background-image: linear-gradient(to bottom, var(--light1), var(--light2));
 }
 
 .hero-text {
@@ -408,4 +418,167 @@ body {
     position: absolute;
     top: -70px;
     right: 0;
+}
+
+.company {
+    height: 791px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 120px;
+}
+
+.company-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.company-title-text {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.company-title {
+    font-size: 80px;
+    text-transform: uppercase;
+    font-weight: 600;
+    width: 760px;
+}
+
+.company-text {
+    font-size: 24px;
+    width: 724px;
+}
+
+.company-info-title {
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.company-info-text {
+    font-size: 24px;
+}
+
+.company-subinfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.company-info {
+    width: 716px;
+    display: flex;
+    flex-direction: row;
+    gap: 42px;
+}
+
+.company-left {
+    position: relative;
+}
+
+.company-left-pic {
+    position: absolute;
+    top: -110px;
+    left: 0;
+}
+
+.testimonial {
+    width: 1920px;
+    height: 924px;
+    display: flex;
+    flex-direction: column;
+}
+
+.testimonial-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 35px 120px;
+}
+
+.testimonial-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    padding: 0 120px;
+}
+
+.testimonial-card {
+    width: 1047px;
+    height: 578px;
+    border: 1px solid var(--dark3);
+    background-color: var(--dark3);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 62px;
+}
+
+.testimonial-title {
+    font-size: 80px;
+    font-weight: 600;
+    text-transform: uppercase;
+    width: 800px;
+    height: 188px;
+}
+
+.testimonial-text {
+    font-size: 24px;
+    font-weight: 500;
+    width: 629px;
+    height: 116px;
+    position: relative;
+    top: 60px;
+}
+
+.testimonial-card-text {
+    font-size: 36px;
+    font-weight: 500;
+    color: white;
+}
+
+.testimonial-card-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.testimonial-card-bottom-left-title {
+    font-size: 28px;
+    color: white;
+}
+
+.testimonial-card-bottom-left-text {
+    font-size: 24px;
+    color: white;
+}
+
+.testimonial-arrow {
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+.button-round {
+    width: 93px;
+    height: 93px;
+    border: 1px solid var(--dark3);
+    border-radius: 50%;
+}
+
+.arrowLeft {
+    left: 0;
+    top: 240px;
+}
+
+.arrowRight {
+    right: 0;
+    top: 240px;
+    
 }
